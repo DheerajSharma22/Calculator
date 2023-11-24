@@ -56,12 +56,6 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-template-areas:
-    "op op op op"
-    "num num num backspace"
-    "num num num equal"
-    "num num num equal"
-    "num num num equal";
 }
 
 .numbersArea button {
@@ -72,13 +66,11 @@ html {
   outline: none;
 }
 
-.zero {
+.three {
   border-bottom-left-radius: 1.5rem;
 }
 
 .numbersArea button.equals {
-  grid-row: 3/6;
-  grid-area: equal;
   font-size: 4rem;
   font-weight: 400;
   background-color: #148f77 !important;
@@ -86,9 +78,7 @@ html {
   cursor: pointer;
 }
 
-.backspace {
-  grid-area: backspace;
-}
+
 .backspace img {
   width: 4rem;
   height: 3rem;
